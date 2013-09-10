@@ -1,0 +1,17 @@
+{
+    "name": "PMSOFT homepage",
+    "version": "0.0.1",
+    "dependencies": {
+        "requirejs": "2.1.8",
+        "requirejs-text": "2.0.10",
+        "jquery": "1.10.2",
+        "bootstrap": "v3.0.0",
+        "underscore-amd": "1.5.1",
+        "has": "866c711db30fa216868c2e086eaa2dbc6d0efa79",
+        "angular": "v1.2.0-rc.2",
+        "angular-route": "v1.2.0-rc.2"
+    },
+    "devDependencies": {
+        "less.js": "v1.4.2"
+    }
+}
