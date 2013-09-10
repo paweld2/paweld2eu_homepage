@@ -14,11 +14,14 @@ build: styles
 	@rm -rf dist
 	@mkdir -p dist
 	@mkdir -p dist/styles
+	@mkdir -p dist/images
+	@mkdir -p dist/fonts
 	@echo "${HR}\n"
 	@echo "\n${HR}"
 	@echo "Optimalization with r.js"
 	@./node_modules/.bin/r.js -o app/build/app.build.js
 	@cp -rf app/styles/*.css dist/styles/
+	@cp -rf app/fonts/* dist/fonts/
 	@sed -e "s/{{ version_data }}/${SHA}/g" app/appBin.html > dist/index.html
 	@echo "${HR}\n"
 	@echo "build done,  ${DATE}."
