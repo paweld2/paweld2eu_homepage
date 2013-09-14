@@ -5,6 +5,7 @@
   , "author": "Paweł Cesar Sanjuan Szklarz"
   , "devDependencies": {
      "recess": "1.1.9",
+     "watchr": "2.4.3",
      "bower": "1.2.6",
      "requirejs": "2.1.8",
      "karma" : "0.10.2"

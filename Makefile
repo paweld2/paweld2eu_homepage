@@ -5,7 +5,7 @@ HR=\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\
 PRETOTYPE = ./app/styles/app.css
 PRETOTYPE_THEME = ./app/styles/app-theme.css
 PRETOTYPE_LESS = ./app/less/bootstrap.less
-PRETOTYPE_THEME_LESS = ./app/less/them.less
+PRETOTYPE_THEME_LESS = ./app/less/theme.less
 SHA := $(shell git rev-parse HEAD)
 
 build: styles
@@ -22,6 +22,7 @@ build: styles
 	@./node_modules/.bin/r.js -o app/build/app.build.js
 	@cp -rf app/styles/*.css dist/styles/
 	@cp -rf app/fonts/* dist/fonts/
+	@cp -rf app/images/* dist/images/
 	@sed -e "s/{{ version_data }}/${SHA}/g" app/appBin.html > dist/index.html
 	@echo "${HR}\n"
 	@echo "build done,  ${DATE}."
@@ -48,8 +49,8 @@ dev: styles-dev
 	cd app; python -m SimpleHTTPServer
 
 watch:
-	echo "Watching less files..."; \
-	watchr -e "watch('app/less/.*\.less') { system 'make styles-dev' }"
+	@echo "Watching less files..."; \
+	@./node_modules/.bin/watchr -e "watch('app/less/.*\.less') { system 'make styles-dev' }"
 
 setup:
 	npm install

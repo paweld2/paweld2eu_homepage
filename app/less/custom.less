@@ -1,0 +1,73 @@
+
+.companyheader {
+  background-image: url("/images/bg-pm.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: white;
+  padding: 80px 0px;
+}
+
+.navbar {
+  box-shadow: none;
+  margin-top: 20px;
+  .navbar-nav {
+    & > li {
+      margin-top: -20px;
+      & > a {
+        padding: 0px;
+        margin: 10px;
+      }
+    }
+    margin-top: 28px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-bottom-left-radius: 2*@navbar-border-radius;
+  }
+}
+
+.panel-pmsoft {
+  //  border-color: none;
+  border: none;
+  & > .panel-heading {
+    @initCol : lighten(#1E537D, 10%);
+    @minCol : lighten(#2178BD, 10%);
+    #gradient > .horizontal-three-colors(@initCol,@minCol,50%,@initCol);
+    color: white;
+    font-weight: bold;
+    //    background-color: darkslategray;
+    border: none;
+//    border-color: blue;
+    + .panel-collapse .panel-body {
+      border-top-color: #ffff00;
+    }
+  }
+  & > .panel-body {
+  }
+  & > .list-group {
+    box-shadow: none;
+    border: none;
+      & > .list-group-item {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        padding: 10px;
+//        border-color: red;
+//        border: 1px solid red;
+        border-top: none;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+        border-bottom-left-radius: 2*@navbar-border-radius;
+
+        &:last-child {
+          border-bottom: 1px solid black;
+        }
+        & > .list-group-item-data {
+          margin-top: -20px;
+        }
+      }
+  }
+  & > .panel-footer {
+    + .panel-collapse .panel-body {
+      border-bottom-color: #008000;
+    }
+  }
+}

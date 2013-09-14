@@ -30,7 +30,7 @@ define([
 
             }]);
             app.run(function() {
-                console.log('injector runnign');
+                console.log('injector running');
             });
 
             console.log('init done');
