@@ -1,8 +1,13 @@
 {
-    "name": "pretotype-html5"
-  , "description": "pretotype template"
+    "name": "paweld2.eu"
+  , "description": "Homepage of PMSOFT company"
+  , "homepage": "http://paweld2.eu/"
   , "version": "0.0.1"
   , "author": "Paweł Cesar Sanjuan Szklarz"
+  , "repository" :
+    { "type" : "git"
+     , "url" : "https://github.com/paweld2/paweld2eu_homepage.git"
+    }
   , "devDependencies": {
      "recess": "1.1.9",
      "watchr": "2.4.3",

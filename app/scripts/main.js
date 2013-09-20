@@ -1,6 +1,7 @@
 'use strict';
 require.config({
     paths: {
+        'bootstrap': 'vendor/bootstrap/dist/js/bootstrap',
         'angular': 'vendor/angular/angular',
         'angularRoute': 'vendor/angular-route/angular-route',
         'text': 'vendor/requirejs-text/text',
@@ -14,6 +15,9 @@ require.config({
         angular  :{
             exports : "angular"
         },
+        bootstrap  :{
+            deps: ["jquery"]
+        },
         "angularRoute": {
             deps: ["angular"]
         }
@@ -22,7 +26,7 @@ require.config({
     waitSeconds : 150
 });
 
-require(['AppInjector','angular'], function (App) {
+require(['AppInjector','angular','bootstrap'], function (App) {
     App.initialize();
     return {};
 });
