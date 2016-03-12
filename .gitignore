@@ -16,5 +16,8 @@ npm-debug.log
 node_modules/
 *.iml
 tmp/
-app/scripts/vendor/
 dist/
+selenium/
+bower_dependencies/
+.DS_Store
+
