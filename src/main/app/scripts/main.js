@@ -1,4 +1,4 @@
-'use strict';
+
 require.config({
     paths: {
         'bootstrap': '../vendor/bootstrap/dist/js/bootstrap',

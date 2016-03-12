@@ -1,5 +1,3 @@
-'use strict';
-
 /* Services */
 
 define(['angular'],function(angular){
@@ -11,5 +9,5 @@ define(['angular'],function(angular){
     return {
         m : module,
         name :moduleName
-    }
+    };
 });

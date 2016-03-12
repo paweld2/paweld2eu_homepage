@@ -1,7 +1,3 @@
-'use strict';
-
-
-
 define(['angular'],function(angular){
     var moduleName = 'directivesModule';
     var module = angular.module(moduleName,[]);
@@ -20,5 +16,5 @@ define(['angular'],function(angular){
     return {
         m : module,
         name :moduleName
-    }
+    };
 });

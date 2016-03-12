@@ -1,7 +1,4 @@
-'use strict';
-
 /* Filters */
-
 define(['angular'],function(angular){
     var moduleName = 'filtersModule';
     var module = angular.module(moduleName,[]);
@@ -14,5 +11,5 @@ define(['angular'],function(angular){
     return {
         m : module,
         name :moduleName
-    }
+    };
 });
