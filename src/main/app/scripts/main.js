@@ -20,17 +20,6 @@ require.config({
         'holderjs': '../vendor/holderjs/holder',
         'marked': '../vendor/marked/lib/marked'
     },
-    paths_OLD: {
-        'bootstrap': 'vendor/bootstrap/dist/js/bootstrap',
-        'angular': 'vendor/angular/angular',
-        'angularRoute': 'vendor/angular-route/angular-route',
-        'text': 'vendor/requirejs-text/text',
-        'requireLib': 'vendor/requirejs/require',
-        'jquery': 'vendor/jquery/jquery',
-        'underscore': 'vendor/underscore-amd/underscore',
-        'moment': 'vendor/moment/moment',
-        'has': 'vendor/has/has'
-    },
     shim : {
         angular  :{
             exports : "angular"

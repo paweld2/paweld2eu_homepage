@@ -74,6 +74,12 @@ module.exports = function (grunt) {
                 src: ["src/main/app/assets/*"],
                 dest: 'dist/assets/'
             },
+            images: {
+                expand: true,
+                flatten: true,
+                src: ["src/main/app/images/*"],
+                dest: 'dist/images/'
+            },
             fonts_dev: {
                 expand: true,
                 flatten: true,
@@ -120,7 +126,24 @@ module.exports = function (grunt) {
                     out: 'dist/app_bin.js',
                     include: ["requireLib"],
                     paths: {
-                        requireLib: 'bower_dependencies/vendor/requirejs/require'
+                        requireLib: '../../../../bower_dependencies/vendor/requirejs/require',
+                        underscore : '../../../../bower_dependencies/vendor/underscore/underscore',
+                        'bootstrap': '../../../../bower_dependencies/vendor/bootstrap/dist/js/bootstrap',
+                        'angularRoute': '../../../../bower_dependencies/vendor/angular-route/angular-route',
+                        'jquery': '../../../../bower_dependencies/vendor/jquery/jquery',
+                        'eelnss': '../../../../bower_dependencies/vendor/eelnss/eelnss',
+                        'angular': '../../../../bower_dependencies/vendor/angular/angular',
+                        'angular-mocks': '../../../../bower_dependencies/vendor/angular-mocks/angular-mocks',
+                        'angular-ui-router': '../../../../bower_dependencies/vendor/angular-ui-router/release/angular-ui-router',
+                        'angular-breadcrumb': '../../../../bower_dependencies/vendor/angular-breadcrumb/dist/angular-breadcrumb',
+                        'angular-resource': '../../../../bower_dependencies/vendor/angular-resource/angular-resource',
+                        'angular-cookies': '../../../../bower_dependencies/vendor/angular-cookies/angular-cookies',
+                        'angular-promise-tracker': '../../../../bower_dependencies/vendor/angular-promise-tracker/promise-tracker',
+                        'text': '../../../../bower_dependencies/vendor/requirejs-text/text',
+                        'moment': '../../../../bower_dependencies/vendor/moment/moment',
+                        'has': '../../../../bower_dependencies/vendor/has/has',
+                        'holderjs': '../../../../bower_dependencies/vendor/holderjs/holder',
+                        'marked': '../../../../bower_dependencies/vendor/marked/lib/marked'
                     },
                     mainConfigFile: 'src/main/app/scripts/main.js',
                     optimize: "uglify2",
